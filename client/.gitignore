@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (optional, if you're using VSCode)
+.vscode/
+
+# IDEs (optional)
+.idea/
+*.swp
+
+# Testing output
+coverage/
+
+# Optional: remove lock files if you don't want to track them
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
