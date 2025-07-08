@@ -11,6 +11,7 @@ const helmet_1 = __importDefault(require("helmet"));
 const morgan_1 = __importDefault(require("morgan"));
 const projectsRoutes_1 = __importDefault(require("./routes/projectsRoutes"));
 const taskRoutes_1 = __importDefault(require("./routes/taskRoutes"));
+const searchRoutes_1 = __importDefault(require("./routes/searchRoutes"));
 // route imports
 // configurations
 dotenv_1.default.config();
@@ -28,6 +29,7 @@ app.get('/', (req, res) => {
 });
 app.use('/projects', projectsRoutes_1.default);
 app.use('/tasks', taskRoutes_1.default);
+app.use('/search', searchRoutes_1.default);
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`server is running on port : ${port}`);
