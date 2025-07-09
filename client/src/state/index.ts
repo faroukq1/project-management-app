@@ -3,11 +3,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 export interface initialStateTypes {
   isSidebarCollapsed: boolean;
   isDarkMode: boolean;
+  isLogIn: boolean;
 }
 
 const initialState: initialStateTypes = {
   isSidebarCollapsed: false,
   isDarkMode: false,
+  isLogIn: false,
 };
 
 export const globalSlice = createSlice({
